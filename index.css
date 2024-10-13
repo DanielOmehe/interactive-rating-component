@@ -20,8 +20,254 @@
 body{
     width: 100%;
     height: 100vh;
+    background-color: var(--color-very-dark-blue);
+    color: var(--color-white);
+    display: grid;
+    place-items: center;
+}
+
+.interactive-rating-component.hide{
+    display: none;
+}
+
+.interactive-rating-component{
+    width: 25%;
+    height: fit-content;
+    padding: 1.5rem;
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 0 50px var(--color-very-dark-blue);
+    border-radius: 1.2rem;
+}
+
+.rating-star{
+    padding: 1rem;
+    border-radius: 100%;
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 0 50px var(--color-very-dark-blue);
+    margin-bottom: 1.2rem;
+}
+
+.rating-heading{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.rating-paragraph{
+    font-size: var(--font-s1ze);
+    color: var(--color-white);
+    opacity: .7;
+    margin-bottom: 1.5rem;
+    padding-right: .7rem;
+}
+
+.rating-btn-container{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .6rem;
+}
+
+.rating-btn{
+    width: 55px;
+    height: 55px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: .5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 0 60px var(--color-very-dark-blue);
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: var(--font-s1ze);
 }
 
+.rating-submit{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-orange);
+    border-radius: 50px;
+    border: none;
+    font-size: var(--font-s1ze);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.interactive-rating-thank-you.show{
+    width: 25%;
+    height: fit-content;
+    text-align: center;
+    background-color: var(--color-dark-blue);
+    border-radius: 1.2rem;
+    padding: 2rem 1.5rem;
+}
+
+.interactive-rating-thank-you{
+    display: none;
+}
+
+.thank-you-illustration{
+    margin-bottom: 1.5rem;
+}
+
+.rating-content{
+    width: 100%;
+}
+
+.rating-count{
+    width: 60%;
+    margin: 0 auto 1rem;
+    border-radius: 50px;
+    padding: .4rem .8rem;
+    color: var(--color-orange);
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 0 60px var(--color-very-dark-blue);   
+}
+
+.rating-content-heading{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.rating-content-paragraph{
+    font-size: var(--font-s1ze);
+    margin-bottom: 1.5rem;
+    color: var(--color-white);
+    opacity: .8;
+}
+
+@media (max-width: 1400px){
+    .interactive-rating-component{
+        width: 28%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 28%;
+    }
+}
+
+@media (max-width: 1200px){
+    .interactive-rating-component{
+        width: 33%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 33%;
+    }
+}
+
+@media (max-width: 1024px){
+    .interactive-rating-component{
+        width: 37%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 37%;
+    }
+}
+
+@media (max-width: 900px){
+    .interactive-rating-component{
+        width: 42%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 42%;
+    }
+}
+
+@media (max-width: 800px){
+    .interactive-rating-component{
+        width: 47%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 47%;
+    }
+}
+
+@media (max-width: 700px){
+    .interactive-rating-component{
+        width: 53%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 53%;
+    }
+}
+
+@media (max-width: 600px){
+    .interactive-rating-component{
+        width: 60%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px){
+    .interactive-rating-component{
+        width: 75%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 75%;
+    }
+}
+
+@media (max-width: 450px){
+    .interactive-rating-component{
+        width: 80%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px){
+    .interactive-rating-component{
+        width: 90%;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        padding: 1rem;
+    }
+
+    .interactive-rating-component{
+        width: 100%;
+    }
+
+    .rating-heading{
+        font-size: 1.5rem;
+    }
+
+    .rating-paragraph{
+        font-size: .9rem;
+        padding-right: .5rem;
+    }
+
+    .rating-btn{
+        width: 50px;
+        height: 50px;
+    }
+
+    .interactive-rating-thank-you.show{
+        width: 100%;
+    }
+}
