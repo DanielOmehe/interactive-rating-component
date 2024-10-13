@@ -20,8 +20,127 @@
 body{
     width: 100%;
     height: 100vh;
+    background-color: var(--color-very-dark-blue);
+    color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.interactive-rating-component.hide{
+    display: none;
+}
+
+.interactive-rating-component{
+    width: 35%;
+    height: fit-content;
+    padding: 1.5rem;
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 0 50px var(--color-very-dark-blue);
+    border-radius: 1.2rem;
+}
+
+.rating-star{
+    padding: 1rem;
+    border-radius: 100%;
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 0 50px var(--color-very-dark-blue);
+    margin-bottom: 2rem;
+}
+
+.rating-heading{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.rating-paragraph{
+    font-size: var(--font-s1ze);
+    color: var(--color-white);
+    opacity: .7;
+    margin-bottom: 1.5rem;
+    padding-right: .7rem;
+}
+
+.rating-btn-container{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .6rem;
+}
+
+.rating-btn{
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 0 60px var(--color-very-dark-blue);
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: var(--font-s1ze);
+}
+
+.rating-submit{
+    width: 100%;
+    height: 50px;
+    background-color: var(--color-orange);
+    border-radius: 50px;
+    border: none;
+    font-size: var(--font-s1ze);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.interactive-rating-thank-you.show{
+    width: 35%;
+    height: fit-content;
+    text-align: center;
+    background-color: var(--color-dark-blue);
+    border-radius: 1.2rem;
+    padding: 2rem 1.5rem;
+}
+
+.interactive-rating-thank-you{
+    display: none;
+}
+
+.thank-you-illustration{
+    margin-bottom: 1.5rem;
+}
+
+.rating-content{
+    width: 100%;
+}
+
+.rating-count{
+    width: 60%;
+    margin: 0 auto 1rem;
+    border-radius: 50px;
+    padding: .4rem .8rem;
+    color: var(--color-orange);
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 0 60px var(--color-very-dark-blue);   
+}
+
+.rating-content-heading{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.rating-content-paragraph{
+    font-size: var(--font-s1ze);
+    margin-bottom: 1.5rem;
+    color: var(--color-white);
+    opacity: .8;
+}
